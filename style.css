@@ -1,0 +1,333 @@
+body {
+  margin: 0;
+}
+
+/* Site structure components */
+
+.main-wrap {
+  height: 100%;
+  display: flex;
+  overflow: scroll;
+}
+
+.intro-card, .intro-text-card, .img-card, .text-card {
+  flex-shrink: 0;
+  position: relative;
+}
+
+.arrow-forwards,
+.arrow-backwards,
+.contact-jump,
+.contact-jump-left,
+.return-jump {
+  position: absolute;
+}
+
+/* Main card content structure */
+
+.content-grid {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  grid-template-columns: auto auto;
+  grid-template-rows: 30% auto 30%;
+  overflow: hidden;
+}
+
+.content-title {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 1;
+  align-self: center;
+}
+
+/* Title border line styling */
+
+.bracket-off-white {
+  box-sizing: border-box;
+  border-top: 2px solid #FFEECF;
+  border-bottom: 2px solid #FFEECF;
+}
+
+.bracket-dark {
+  border-top: 2px solid #1A1E23;
+  border-bottom: 2px solid #1A1E23;
+}
+
+/* Bulk grid-centering */
+
+.paragraph-left,
+.paragraph-right,
+.img-container01,
+.img-container02,
+.img-container03,
+.content-title,
+.item01-text,
+.item02-text,
+.item03-text,
+.item01,
+.item02,
+.item03,
+.design-title,
+.dev-img01,
+.dev-img02,
+.dev-par03,
+.contact-title,
+.contact-footer
+ {
+  justify-self: center;
+}
+
+/* Design section #1 structure */
+
+.design-grid01 {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 30% auto;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.design-title {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 1;
+  align-self: center;
+}
+.img-container01 {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+  margin-right: 10px;
+  align-self: center;
+}
+.design-par01 {
+  grid-column: 2 / span 2;
+  grid-row: 2 / span 1;
+  margin-left: 10px;
+}
+
+/* Design section #2 structure */
+
+.design-grid02 {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.design-par02 {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  margin-right: 10px;
+}
+.design-par03 {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+  margin-left: 10px;
+}
+
+.img-container01,
+.img-container02,
+.img-container03 {
+  box-sizing: border-box;
+  border: 3px solid #FFEECF;
+}
+
+.design-image-display {
+  width: 100%;
+}
+
+/* Photo modal structure */
+
+.item-grid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.item01-text {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.item02-text {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+
+}
+
+.item03-text {
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 1;
+}
+
+.item01 {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+  align-self: center;
+  margin-left: 40px;
+}
+
+.item02 {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+  align-self: center;
+  margin-left: 40px;
+}
+
+.item03 {
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
+  align-self: center;
+  margin-left: 40px;
+}
+
+/* Development Grid Structure */
+
+.dev-grid {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.dev-img01 {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  align-self: center;
+  margin-right: 10px;
+}
+
+.dev-img02 {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+  align-self: center;
+  margin-left: 10px;
+}
+
+.dev-par01 {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+  align-self: start;
+  margin-right: 10px;
+}
+
+.dev-par02 {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+  align-self: start;
+  margin-left: 10px;
+}
+
+/* Contact section structure */
+
+.contact-grid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto 1fr 1fr 1fr 1fr;
+}
+
+.contact-item01,
+.contact-item02,
+.contact-item03,
+.contact-item04 {
+  /*justify-self: center;*/
+  align-self: center;
+  margin-top: 20px;
+}
+
+.contact-title {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  align-self: center;
+}
+
+.contact-item01 {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+}
+
+.contact-item02 {
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 1;
+}
+
+.contact-item03 {
+  grid-column: 1 / span 1;
+  grid-row: 4 / span 1;
+}
+
+.contact-item04 {
+  grid-column: 1 / span 1;
+  grid-row: 5 / span 1;
+}
+
+.contact-img01 {
+  max-height: 75vh;
+  width: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  border: 3px solid #1A1E23;
+}
+
+
+/* Section styling */
+
+#intro01 {
+  background-image: url("../imgs/bizcard-01.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+}
+
+#intro02  {
+  background-color: #1A1E23;
+}
+
+#photography01 {
+  background-color: #FFEECF;
+}
+
+#photography02 {
+  background-color: #FFEECF;
+}
+
+#design01 {
+  background-color: #1A1E23;
+}
+
+#design02 {
+  background-color: #1A1E23;
+}
+
+#development01 {
+  background-color: #A40002;
+}
+
+#development02 {
+  background-color: #A40002;
+}
+
+#contact01 {
+  background-color: #FFEECF;
+}
+
+#contact02 {
+  background-color: #FFEECF;
+}

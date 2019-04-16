@@ -1,0 +1,54 @@
+/* General font styling */
+
+h1, h2, h3 {
+  font-family: century-old-style-std, serif;
+}
+
+p {
+  font-family: source-sans-pro, sans-serif;
+  text-align: justify;
+  color: white;
+}
+a {
+  font-family: source-sans-pro, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  color: #A40002;
+}
+h3 {
+  text-align: center;
+}
+
+.arrow {
+  margin: 0;
+  font-size: 4rem;
+}
+.jump {
+  margin: 0;
+  font-size: 1.7rem;
+  font-style: bold;
+}
+.margin-zero {
+  margin: 0px;
+}
+.dark {
+  color: #1A1E23;
+}
+.off-white {
+  color: #FFEECF;
+}
+.red {
+  color: #A40002;
+}
+
+.bold {
+  font-style: bold;
+}
+
+/* colour codes */
+
+/*color: #1A1E23;  slate*/
+/*color: #FFF4E0;  cream*/
+/*color: #A40002;  deep red*/
+/*color: #C7EFCF;  mint*/
+/*color: #568EA3;  pale blue*/

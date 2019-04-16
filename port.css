@@ -1,0 +1,161 @@
+/* Responsive settings for portrait orientation scroll */
+
+@media (orientation: portrait) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    line-height: 2rem;
+  }
+  a,p,h3 {
+    font-size: 2rem;
+  }
+
+  .arrow-forwards,
+  .arrow-backwards,
+  .contact-jump,
+  .contact-jump-left,
+  .return-jump {
+    display: none;
+  }
+
+  /* Site structure components */
+
+  .main-wrap {
+    flex-direction: column;
+  }
+
+  .intro-card {
+    height: 60vh;
+    width: 100%;
+  }
+  .intro-text-card {
+    height: 40vh;
+    width: 100%;
+  }
+  .img-card, .text-card {
+    height: 50vh;
+    width: 100%;
+  }
+
+  /* Main text title cards structure */
+
+  .content-grid {
+    height: auto;
+    /* display: grid; disabled for portrait */
+  }
+
+  .content-title {
+    text-align: center;
+  }
+
+  .paragraph-left {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 1;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .paragraph-right {
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 1;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .bracket-off-white, .bracket-dark {
+    border-width: 0px;
+  }
+
+  /* Design & Dev card structure */
+
+  .design-grid01, .design-grid02 {
+    top: 50;
+    overflow: initial;
+    transform: translateY(0%);
+    height: 26rem;
+  }
+
+  .dev-grid {
+    height: auto;
+    top: 10;
+    overflow: hidden;
+  }
+
+  /* Contact list margins */
+
+  .contact-item01,
+  .contact-item02,
+  .contact-item03,
+  .contact-item04 {
+    margin-left: 35%;
+  }
+
+  /* Modal styling for Portrait */
+
+  .modal-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2rem auto auto auto auto 2rem;
+    padding: 40px;
+  }
+
+  .modal-content {
+    width: 80%;
+  }
+
+  .close-bar {
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 1;
+  }
+
+  .full-image-container {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 1;
+    justify-self: center;
+    align-self: center;
+  }
+  .thumb01 {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+  }
+  .thumb02 {
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+  }
+  .thumb03 {
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 1;
+  }
+  .thumb04 {
+    grid-column: 2 / span 1;
+    grid-row: 4 / span 1;
+  }
+  .thumb05 {
+    grid-column: 1 / span 1;
+    grid-row: 5 / span 1;
+  }
+  .thumb06 {
+    grid-column: 2 / span 1;
+    grid-row: 5 / span 1;
+  }
+  .thumb {
+    height: 80%;
+    width: 85%;
+    justify-self: center;
+    align-self: center;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 3px solid #FFEECF;
+  }
+
+  .full-image-display {
+    width: 100%;
+    box-sizing: border-box;
+    border: 3px solid #FFEECF;
+  }
+  .small-image-display {
+    width: 100%;
+  }
+}

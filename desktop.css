@@ -1,0 +1,60 @@
+  /* Responsive settings for desktop sizing */
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 2.2rem;
+    line-height: 2rem;
+  }
+  h2{
+    font-size: 1.5rem;
+  }
+  h3 {
+    line-height: 2rem;
+  }
+  p,h3 {
+    font-size: 1.2rem;
+  }
+  .content-grid {
+    height: 30rem;
+  }
+  .design-grid01, .design-grid02, .dev-grid {
+    /*height: 30rem;*/
+  }
+  .design-grid01 {
+    top: 10%;
+    transform: translateY(0%);
+  }
+  .dev-grid {
+    top: 50%;
+    transform: translatey(-50%);
+  }
+  .arrow-forwards {
+    bottom: 40;
+    right: 40;
+  }
+  .arrow-backwards {
+    bottom: 40;
+    left: 40;
+  }
+  .contact-jump {
+    top: 40;
+    right: 40;
+  }
+  .contact-jump-left {
+    top: 40;
+    left: 40;
+  }
+  .return-jump {
+    bottom: 50;
+    right: 40;
+  }
+
+  /* Contact list margins */
+
+  .contact-item01,
+  .contact-item02,
+  .contact-item03,
+  .contact-item04 {
+    margin-left: 40%;
+  }
+}

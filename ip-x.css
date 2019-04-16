@@ -1,0 +1,39 @@
+/* iPhone X landscape adjustments */
+
+@media only screen
+    and (device-height : 375px)
+    and (device-width : 812px)
+    and (-webkit-device-pixel-ratio : 3) {
+
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  h3 {
+    line-height: 1rem;
+  }
+  p,h3 {
+    font-size: 0.7rem;
+  }
+  .content-grid {
+    height: auto;
+    grid-template-rows: auto auto 30%;
+  }
+  .content-title {
+    margin-bottom: 10px;
+  }
+  .intro-card {
+    height: 100vh;
+    width: 40%;
+  }
+  .intro-text-card {
+    height: 100vh;
+    width: 60%;
+  }
+  .design-grid01 {
+    top: 10%;
+    transform: translateY(0%);
+  }
+}

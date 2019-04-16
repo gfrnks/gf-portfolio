@@ -1,0 +1,197 @@
+/* Responsive settings for landscape orientation scroll */
+
+@media (orientation: landscape) {
+  .main-wrap {
+    overflow: hidden;
+}
+
+
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    line-height: 2rem;
+  }
+  p,h3 {
+    font-size: 1rem;
+  }
+
+
+  /* Site structure components */
+
+  .main-wrap {
+    flex-direction: row;
+  }
+  .intro-card, .intro-text-card, .img-card, .text-card {
+    height: 100vh;
+    width: 50%;
+  }
+  .arrow-forwards {
+    bottom: 5;
+    right: 40;
+  }
+  .arrow-backwards {
+    bottom: 5;
+    left: 40;
+  }
+  .contact-jump {
+    top: 20;
+    right: 40;
+  }
+  .contact-jump-left {
+    top: 20;
+    left: 40;
+  }
+  .return-jump {
+    bottom: 20;
+    right: 40;
+  }
+
+
+  /* Main text title cards structure */
+
+  .content-grid {
+    height: 26rem;
+    display: grid;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .paragraph-left {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    margin-right: 10px;
+  }
+  .paragraph-right {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 2;
+    margin-left: 10px;
+  }
+
+
+  /* Design & Dev card structure */
+
+  .design-grid01, .design-grid02 {
+    /*height: 26rem;*/
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .dev-grid {
+    height: auto;
+    top: 50%;
+    transform: translatey(-50%);
+
+  }
+
+
+  /* Card dividers */
+
+  #photography01 {
+    box-sizing: border-box;
+    border-right: 1px solid #1A1E23;
+  }
+  #design01 {
+    box-sizing: border-box;
+    border-right: 1px solid #FFEECF;
+  }
+  #development01 {
+    box-sizing: border-box;
+    border-right: 1px solid #FFEECF;
+  }
+  #contact01 {
+    box-sizing: border-box;
+    border-right: 1px solid #1A1E23;
+  }
+
+  /* Contact list margins */
+
+  .contact-item01,
+  .contact-item02,
+  .contact-item03,
+  .contact-item04 {
+    margin-left: 35%;
+  }
+
+  /* Modal styling for landscape */
+
+  .modal-grid {
+    grid-template-columns: 70% 15% 15%;
+    grid-template-rows: 2rem 1fr 1fr 1fr 2rem;
+    padding: 30px;
+  }
+
+  .modal-content {
+    width: 80%;
+    /*height: 90vh;*/
+  }
+
+  .close-bar {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 1;
+  }
+
+  .full-image-container {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 3;
+  }
+
+  .thumb01,
+  .thumb03,
+  .thumb05 {
+    margin-right: 10px;
+  }
+  .thumb02,
+  .thumb04,
+  .thumb06 {
+    margin-left: 10px;
+  }
+
+  .thumb01 {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+  }
+  .thumb02 {
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 1;
+  }
+  .thumb03 {
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+  }
+  .thumb04 {
+    grid-column: 3 / span 1;
+    grid-row: 3 / span 1;
+  }
+  .thumb05 {
+    grid-column: 2 / span 1;
+    grid-row: 4 / span 1;
+  }
+  .thumb06 {
+    grid-column: 3 / span 1;
+    grid-row: 4 / span 1;
+  }
+
+  .thumb {
+    height: 90%;
+    width: 90%;
+    justify-self: center;
+    align-self: center;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 3px solid #FFEECF;
+  }
+
+  .small-image-display {
+    height: 100%;
+  }
+
+  .full-image-display {
+    width: 95%;
+    box-sizing: border-box;
+    border: 3px solid #FFEECF;
+  }
+}

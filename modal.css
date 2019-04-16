@@ -1,0 +1,53 @@
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.6);
+}
+
+/* Modal Content/Box */
+
+.modal-content {
+  background-color: #1A1E23;
+  box-shadow: 2px 2px 5px black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* The Close Button */
+
+.faClose {
+  color: #FFEECF;
+  float: right;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.faClose:hover,
+.faClose:focus {
+  color: #FFEECF;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#faModalLink {
+  cursor: pointer;
+}
+
+/* Modal Grid */
+
+.modal-grid {
+  display: grid;
+}
+
+.hidden {
+  display: none;
+}
