@@ -153,6 +153,7 @@ body {
 .item01-text {
   grid-column: 1 / span 1;
   grid-row: 1 / span 1;
+  cursor: pointer;
 }
 
 .item02-text {
